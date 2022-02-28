@@ -1,0 +1,81 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Light_gray);
+}
+/* Weights: 400, 700 
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+- Mobile: 375px
+- Desktop: 1440px
+*/
+p{
+    font-size: 15px;
+}
+.container{
+    /* Padding for mobile view */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile */
+@media (max-width:375px) {
+    .container{
+        width: 365px;
+    }
+}
+
+ /* Desktop */
+@media (min-width:1440px) {
+    .container{
+        width: 1430px;
+    }
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(212, 45%, 89%);
+    --Grayish_blue: hsl(220, 15%, 55%);
+    --Dark_blue: hsl(218, 44%, 22%);
+}
+.qrBox{
+    margin: auto;
+    margin-top: 10%;
+    width: 23%;
+    text-align: center;
+    background-color: var(--White);
+    border-radius:15px ;
+    -webkit-border-radius:15px ;
+    -moz-border-radius:15px ;
+    -ms-border-radius:15px ;
+    -o-border-radius:15px ;
+}
+.qrBox img{
+    width: 90%;
+    margin-top: 5%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.qrBox .text h1{
+    padding: 0 30px;
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--Dark_blue);
+}
+.qrBox .text p{
+    font-weight: 400;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: var(--Grayish_blue);
+    padding-bottom: 30px;
+}
+@media (max-width:1440px){
+    .qrBox{
+        width: 300px;
+    }
+}
